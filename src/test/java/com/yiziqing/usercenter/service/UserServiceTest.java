@@ -42,7 +42,8 @@ class UserServiceTest {
         String userAccount = "yiziqing";
         String userPassword = "1123";
         String checkPassword = "123456";
-        long result = userService.userRegister(userAccount, userPassword, checkPassword);
+        String planetCode = "1";
+        long result = userService.userRegister(userAccount, userPassword, checkPassword, planetCode);
         Assertions.assertEquals(-1, result);
     }
 
